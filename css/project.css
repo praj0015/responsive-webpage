@@ -50,21 +50,17 @@ img {
 
 header {
     padding: 1rem 2rem;
-    color: black;
     background-image: url(/img/header2.jpeg);
     padding: 1rem 1rem 1rem 1rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
-    background-repeat: repeat;
+    height: auto;
 }
 
 header > h1 {
     font-size: 3rem;
     font-family: serif;
 }
-
 header > h2 {
-    color: hsl(220deg, 30%, 90%);
+    color: rgb(100%,50%,100%);
     font-size: 2rem;
 }
 
@@ -81,9 +77,6 @@ nav {
     align-content: center;
     flex-wrap: wrap;
     background-color: rgb(200,200,200);
-    border: 0.1rem solid hsl(0deg, 100%, 100%);
-    margin-left: 1rem;
-    margin-right: 1rem;
 }
 
 nav > a,
@@ -93,12 +86,11 @@ nav > a:link {
     font-family: "Montserrat", sans-serif;
     font-size: 1.3rem;
 }
-
 nav > a:active,
 nav > a:focus,
 nav > a:hover {
     font-size: 2rem;
-    color: rgb(50%,100%,50%);
+    color: rgb(100%,50%,100%);
 }
 
 
@@ -118,7 +110,12 @@ main {
     margin: 1.5rem;
     flex-wrap: nowrap;
 }
-
+section > h1{
+        color: rgb(110%,50%,100%);
+    }
+    section > h2{
+        color: rgb(110%,50%,100%);
+    }
 section {}
 
 section p {
@@ -166,37 +163,34 @@ footer {
 .foot dd a:visited {
     color: rgb(0%,0%,0%);
 }
-
+ .foot dt{
+        color:rgb(100%,50%,100%);
+    }
 .foot dd a:active,
 .foot dd a:focus,
 .foot dd a:hover {
     font-size: 1.2rem;
 }
 
-
+ 
 /*************************************************
             MEDIA QUERIES for layout
 *************************************************/
 
 @media (max-width: 599px) {
+    .mainnav{
+        align-items: flex-start;
+    }
     header {
         width: 550px;
         height: 150px;
-        flex-grow: 1;
-        flex-shrink: 1;
     }
     header > h1 {
         font-size: 2.5rem;
-        color: rgb(50%,100%,50%);
+        color: rgb(100%,50%,100%);
     }
     header > h2 {
         font-size: 2rem;
-    }
-     section > h1{
-        color: rgb(50%,100%,50%);
-    }
-    section > h2{
-        color: rgb(50%,100%,50%);
     }
     nav {
         flex-direction: column;
@@ -214,10 +208,10 @@ footer {
     footer {
         padding: 1rem 2rem;
         flex-direction: column-reverse;
-         border-top: 1rem solid rgb(50%,100%,50%);
+         border-top: 1rem solid rgb(100%,50%,100%);
     }
     .foot nav {
-        flex-direction: column;
+        flex-direction: row;
         align-items: stretch;
         padding-bottom: 2rem;
         flex-basis: 100%;
@@ -228,9 +222,6 @@ footer {
         padding-bottom: 1rem;
         margin-bottom: 1rem;
         width: 100%;
-    }
-    .foot dt{
-        color:rgb(50%,100%,50%);
     }
     form .form-box input,select,textarea,button{
         width: 100%;
@@ -247,6 +238,9 @@ footer {
 }
 
 @media (min-width: 600px) and (max-width:999px) {
+    header{
+        
+    }
     header > h1 {
         font-size: 3.0rem;
         font-family: 'Source+Sans+Pro';
@@ -348,21 +342,15 @@ footer {
         align-content: center;
     }
     header > h1{
-        color:rgb(100%,0%,0%);
+        color: rgb(100%,50%,100%);
     }
     section > h1{
-        color: rgb(100%,0%,0%);
+        color: rgb(100%,50%,100%);
         font-size: 1.7rem;
     }
     section > h2{
-        color: rgb(100%,0%,0%);
+        color: rgb(100%,50%,100%);
        font-size : 1.7rem;
-    }
-    nav > a:active,
-    nav > a:focus,
-     nav > a:hover {
-    font-size: 2rem;
-    color: rgb(100%,0%,0%);
     }
     main {
         flex-direction: row;
@@ -380,7 +368,7 @@ footer {
         grid-template-columns: 1fr 1fr;
         grid-template-areas: 
             "subnav comments";
-        border-top: 1rem solid rgb(100%,0%,0%);
+        border-top: 1rem solid rgb(100%,50%,110%);
     }
     .subnav{
         grid-area: subnav;
