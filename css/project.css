@@ -164,13 +164,13 @@ footer {
 
 .foot dd a,
 .foot dd a:visited {
-    color: hsl(0deg,0%,0%);
+    color: rgb(0%,0%,0%);
 }
 
 .foot dd a:active,
 .foot dd a:focus,
 .foot dd a:hover {
-    
+    font-size: 1.2rem;
 }
 
 
@@ -351,11 +351,11 @@ footer {
         color:rgb(100%,0%,0%);
     }
     section > h1{
-        color: hsl(0deg,100%,50%);
+        color: rgb(100%,0%,0%);
         font-size: 1.7rem;
     }
     section > h2{
-        color: hsl(0deg,100%,50%);
+        color: rgb(100%,0%,0%);
        font-size : 1.7rem;
     }
     nav > a:active,
@@ -375,33 +375,33 @@ footer {
         height: 200px;
     }
     footer{
+        display: grid;
+        border-color: rgb(241,165,0);
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+            "subnav comments";
         border-top: 1rem solid rgb(100%,0%,0%);
     }
-    .foot nav{
-        flex-direction: row;
-        justify-content: space-between;
-        flex-basis: 50%;
+    .subnav{
+        grid-area: subnav;
+    }
+    .comments{
+        grid-area: comments;
     }
     form .form-box input,select,textarea{
-        justify-content: flex-start;
-        align-items: stretch;
-        width:100%;
-        flex-basis: 50%;
+        width: 100%;
         margin-bottom: 1rem;
-    }
-    .foot dt{
-        color:rgb(100%,0%,0%);
+        height: 1.5rem;
     }
     form .form-box input{
         width: 50%;
         float: left;
-        padding-right: 2rem;
-    }
-    #comment{
-           height: 3rem;
     }
     button{
-        width:50%;
-        height: 1.5rem;
+        width:30%;
+        height: 2rem;
+    }
+    textarea{
+        height: 3rem;
     }
 }
