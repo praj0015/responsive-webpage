@@ -59,7 +59,6 @@ header {
 }
 
 header > h1 {
-    color: hsl(0deg, 100%, 50%);
     font-size: 3rem;
     font-family: serif;
 }
@@ -99,7 +98,7 @@ nav > a:active,
 nav > a:focus,
 nav > a:hover {
     font-size: 2rem;
-    color: hsl(0deg, 100%, 50%);
+    color: rgb(50%,100%,50%);
 }
 
 
@@ -141,7 +140,6 @@ footer {
     padding: 1rem 2rem;
     display: flex;
     background-color: hsl(35deg, 0%, 85%);
-    border-top: 1rem solid rgb(100%,0%,0%);
 }
 
 .foot nav {
@@ -158,13 +156,15 @@ footer {
     align-items:center;
     flex-basis: 50%;
 }
-.foot dt {}
+.foot dt {
+    font-size: 1.3rem;
+}
 
 .foot dd {}
 
 .foot dd a,
 .foot dd a:visited {
-    color: hsl(0deg, 100%, 50%);
+    color: hsl(0deg,0%,0%);
 }
 
 .foot dd a:active,
@@ -187,15 +187,16 @@ footer {
     }
     header > h1 {
         font-size: 2.5rem;
+        color: rgb(50%,100%,50%);
     }
     header > h2 {
         font-size: 2rem;
     }
      section > h1{
-        color: hsl(0deg,100%,50%);
+        color: rgb(50%,100%,50%);
     }
     section > h2{
-        color: hsl(0deg,100%,50%);
+        color: rgb(50%,100%,50%);
     }
     nav {
         flex-direction: column;
@@ -213,6 +214,7 @@ footer {
     footer {
         padding: 1rem 2rem;
         flex-direction: column-reverse;
+         border-top: 1rem solid rgb(50%,100%,50%);
     }
     .foot nav {
         flex-direction: column;
@@ -227,11 +229,17 @@ footer {
         margin-bottom: 1rem;
         width: 100%;
     }
+    .foot dt{
+        color:rgb(50%,100%,50%);
+    }
     form .form-box input,select,textarea,button{
         width: 100%;
+        height: 1.5rem;
+        margin-bottom: 0.7rem;
     }
     button{
         width: 40%;
+        height: 2rem;
     }
     div>#comment {
         height: 4rem;
@@ -242,15 +250,18 @@ footer {
     header > h1 {
         font-size: 3.0rem;
         font-family: 'Source+Sans+Pro';
+        color: rgb(100%,50%,100%);
     }
     header > h2 {
         font-size: 2rem;
     }
     section > h1{
-        color: hsl(0deg,100%,50%);
+         color: rgb(100%,50%,100%);
+        font-size: 2rem;
     }
     section > h2{
-        color: hsl(0deg,100%,50%);
+          color: rgb(100%,50%,100%);
+          font-size: 2rem;
     }
     .primary {
         display: grid;
@@ -270,6 +281,12 @@ footer {
         grid-area: c;
         padding: 1rem;
     }
+    nav > a:active,
+    nav > a:focus, 
+    nav > a:hover {
+    font-size: 2rem;
+    color: rgb(100%,50%,100%);
+     }
     section p {
         font-size: 1.1rem;
         font-family: "Source+Sans+Pro" "Roboto" "fallback";
@@ -287,6 +304,10 @@ footer {
     footer{
         flex-direction: column-reverse;
         flex-basis: 100%;
+        border-top: 1rem solid rgb(100%,50%,100%);
+    }
+    .foot dt{
+        color:rgb(100%,50%,100%);
     }
     .subnav{
         display: grid;
@@ -315,8 +336,9 @@ footer {
         height: 4rem;
     }
     button{
-        width: 40%;
-        height: 1.5rem;
+        width: 30%;
+        height: 2rem;
+        margin-bottom: 1rem;
     }
 }
 
@@ -325,11 +347,22 @@ footer {
         flex-direction: row;
         align-content: center;
     }
+    header > h1{
+        color:rgb(100%,0%,0%);
+    }
     section > h1{
         color: hsl(0deg,100%,50%);
+        font-size: 1.7rem;
     }
     section > h2{
         color: hsl(0deg,100%,50%);
+       font-size : 1.7rem;
+    }
+    nav > a:active,
+    nav > a:focus,
+     nav > a:hover {
+    font-size: 2rem;
+    color: rgb(100%,0%,0%);
     }
     main {
         flex-direction: row;
@@ -340,6 +373,9 @@ footer {
     section p img {
         width: 250px;
         height: 200px;
+    }
+    footer{
+        border-top: 1rem solid rgb(100%,0%,0%);
     }
     .foot nav{
         flex-direction: row;
@@ -352,6 +388,9 @@ footer {
         width:100%;
         flex-basis: 50%;
         margin-bottom: 1rem;
+    }
+    .foot dt{
+        color:rgb(100%,0%,0%);
     }
     form .form-box input{
         width: 50%;
